@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    text-align: center;
+    background-color: #6959CD;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+  height: 520px;
+  width: 600px;
+  background-color: #836FFF;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 45px 35px;
+}
+
+.caixa {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.pt{
+  margin: 15;
+  padding: 10px;
+}
+
+.pt:hover{ 
+  display: block;
+} 
+
+h1 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+  text-align: left;
+}
+
+ul {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: inline;
+    gap: 20px;
+    justify-content: left;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height:60px;
+    border-radius: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+ul li:hover {
+    font-size: 1cm;
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i, #cedfdf), var(--j, #8da79a));
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i, #fcfcfc) var(--j, #fcfcfc));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+ul li:hover::after {
+    opacity: 0.5;
+}
+
+ul li i {
+    position: absolute;
+    top: 0.5%;
+    left: 14px;
+    color: #fcfcfc;
+    font-size: 1cm !important;
+    transition: 0.5s;
+    transition-delay: 0.05s; 
+}
+
+ul li:hover i {
+    transform: scale(0);
+    font-size: 1cm;
+    transition-delay: 0.05s;
+}
+
+ul li span {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+ul li:hover .icon{
+    color: #fff;
+    font-size: 0.5cm !important;
+}
+
+/* Configuração do botão do WHATSAPP*/
+ul li .wpp {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    color: #fff;
+    font-size: 0.5cm !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .wpp {
+    transform: scale(1);
+    transition-delay: 0s;
+}
+
+/* Configuração do botão do GITHUB*/
+ul li .github {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    color: #fff;
+    font-size: 0.5cm !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .github {
+    transform: scale(1);
+    transition-delay: 0s;
+}
+
+/* Configuração do botão do LINKEDIN*/
+ul li .linkedin {
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    color: #fff;
+    font-size: 0.5cm !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .linkedin {
+    transform: scale(1);
+    transition-delay: 0s;
+}
+
+/* Configuração do botão do INSTAGRAM*/
+ul li .instagram {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #fff;
+    font-size: 0.5cm !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .instagram {
+    transform: scale(1);
+    transition-delay: 0s;
+}
